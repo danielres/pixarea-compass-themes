@@ -1,0 +1,17 @@
+@import lib/typo
+
+=typo
+  +typo1
+
+=typo1
+  +font-face-for($font2)
+  h1, h2, .menu a
+    font-family: $font2 
+  body
+    font-family: $tahoma-font-stack  
+  h1
+    font-size: 40px
+    font-weight: bold
+    +font-smoothing-chrome
+  h2
+    font-size: 26px    

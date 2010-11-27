@@ -1,0 +1,125 @@
+@import lib/palettes
+
+=tones($set:1)
+  @if $set == 1
+    $brown: $rusty-brown
+    $red: $rusty-red
+    $orange: $rusty-orange
+    $green: $rusty-green
+    $young-green: $rusty-young-green  
+    $brownish-orange: $rusty-brownish-orange
+    $mix1: mix($brownish-orange,white,50)
+    $shadow-color: $rusty-brown !default
+  
+    html, body  
+      height: 100%
+    body     
+      +linear-gradient-pie($brown, $brownish-orange)
+    .hd
+      h1
+        +linear-gradient-pie(saturate(lighten($young-green, 20),100) 0%,saturate(darken($green,10),30) 100%)
+        a
+          +linear-gradient(color-stops(lighten($orange, 30), lighten($orange, 20), $orange, $red))
+          color: darken($brownish-orange, 5)
+    .main
+      +linear-gradient-pie($mix1 0%, white 100%)
+    .menu a
+      +linear-gradient-pie($mix1 0%, darken($mix1,20) 100%)
+      &:hover
+        +linear-gradient-pie($mix1 0%, $mix1 100%)
+    .sub .box
+      background: mix($young-green, $brownish-orange, 30)
+
+
+  @if $set == 2
+    $darkblue: $burma-darkblue
+    $clearblue: $burma-clearblue
+    $sable: $burma-sable      
+    $palegreen: $burma-palegreen 
+    $deepgreen: $burma-deepgreen
+    $lightsable: $burma-lightsable
+
+    
+    html, body  
+      height: 100%
+    body     
+      +linear-gradient-pie($darkblue, $clearblue)
+      +linear-gradient-pie(#222 0%, #666 100%)
+      $mix1: mix($darkblue, #222, 20)
+      $mix2: mix($clearblue, #666, 30)
+      +linear-gradient-pie($mix1 66%, $mix2 100%)      
+    .hd
+      h1
+        +linear-gradient-pie($clearblue, $darkblue)
+        a
+          +linear-gradient-pie($palegreen 0%, darken($deepgreen,10) 100%)
+          $color: mix($deepgreen, $darkblue, 40)
+    .main
+      +linear-gradient-pie($sable 0%, white 100%)
+    .menu a
+      background: $sable
+    .sub .box
+      $mix1: mix($deepgreen, $darkblue, 40)
+      $mix2: mix($deepgreen, $darkblue, 60)
+      $pos: 49px
+      border: 5px solid $mix2
+      +linear-gradient-pie($mix1 $pos, $mix2 $pos+1)
+
+
+  @if $set == 3
+    $blue:       $firen-blue     
+    $egg:        $firen-egg      
+    $deepegg:    $firen-deepegg
+    $brick:      $firen-brick   
+    $deepbrick:  $firen-deepbrick
+    
+    html, body  
+      height: 100%
+    body     
+      +linear-gradient-pie($deepbrick 0%, $egg 100%)
+    .hd
+      h1
+        $mix1: mix($egg, $brick, 50)
+        +linear-gradient-pie($mix1 30%, $brick 95%)
+        a
+          background: $blue
+    .main
+      +linear-gradient-pie($egg 0%, $deepegg 100%)
+    .menu a
+      background: $egg
+      &:hover
+    .sub .box
+      background: $egg 
+
+  @if $set == 4
+    $brown:    $circ-brown
+    $red:      $circ-red   
+    $yellow:   $circ-yellow
+    $green:    $circ-green  
+    $white:    $circ-white
+    
+    html, body  
+      height: 100%
+    body     
+      +linear-gradient-pie(#222 0%, #777 100%)      
+    .hd
+      h1
+        $mix: mix($yellow, $white, 50) 
+        +linear-gradient-pie($mix 0%, $yellow 100%)      
+        a
+          +linear-gradient-pie($green +#222 0%, $green -#222 100%)      
+    .main
+      $mix: mix($brown, $white, 50)       
+      +linear-gradient-pie($mix 50px, $white 300px)      
+    .menu a
+      $mix: mix($brown, $white, 80)       
+      +linear-gradient-pie($mix 70%, $mix - #222 100%)      
+      color: $white !important
+    .sub .box
+      background: $red
+      border: 5px solid mix($red,$brown - #333 ,50)
+
+
+
+
+ 

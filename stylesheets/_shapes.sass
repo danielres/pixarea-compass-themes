@@ -1,0 +1,18 @@
+@import lib/pie
+
+=shapes
+  +shapes1
+  
+  
+=shapes1
+  $b: 10px
+  h1
+    +border-radius-pie(50px $b)
+    a
+      +border-radius-pie(50px $b)
+  .sub .box
+    +border-radius-pie($b $b*4 $b*4 $b)
+  .main
+    +border-radius-pie($b)      
+  .menu a
+    +border-radius-pie($b $b 0 0)

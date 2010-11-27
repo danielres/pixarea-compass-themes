@@ -1,0 +1,17 @@
+@import lib/palettes
+
+$shadow-color: black !default
+
+=shadows
+  $default-box-shadow-color: $shadow-color
+  $default-box-shadow-blur: 15px
+  .main,
+  .menu a,
+  h1,
+  h1 a     
+    +box-shadow
+  h1 a     
+    +text-shadow(0,0,4px,transparentize($shadow-color, 0.7))
+    //filter: Shadow(Color=$shadow-color, Direction=135, Strength=5)
+  .sub .box
+    +box-shadow(transparentize(black, 0.6), -6px, 6px, 14px, 0)
