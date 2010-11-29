@@ -1,6 +1,5 @@
-Pixarea theme system
-by Daniel Reszka (blog.pixarea.com)
-===================================
+Pixarea theme system - by Daniel Reszka (blog.pixarea.com)
+==========================================================
 
 This is a personal CSS framework I'm building for my future projects, based on SASS and Compass.
 
