@@ -1,0 +1,15 @@
+=menu-inline-blocks($item-span:4)
+  ul
+    +inline-block-list
+    li
+      margin-bottom: 10px
+      +column($item-span)
+      a
+        padding: 5px
+        display: block
+        text-align: center
+      &.selected > a 
+        font-weight: bold
+      &.last
+        +last
+

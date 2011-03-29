@@ -1,0 +1,49 @@
+=shapy-structure
+  #body_content_title
+    +visually-hide
+    
+  .inner
+    +box  
+      
+  #page
+    #header
+      +container-alt
+      padding-top: 20px      
+    #body
+      +container-alt
+      #body_content_left
+        +column(17)
+        .inner
+          padding-right: 100px
+      .no_body_content_right #body_content_left
+        +column(22)
+      #body_content_right
+        +column(8)
+        +last
+        +pull(1.5)
+        +prepend-top(40px)
+    
+  #menu
+    +menu-inline-blocks(4)
+    padding-left: 10px   
+
+  #header
+    h1
+      padding: 20px 10px
+      a
+        +unstyled-link
+        +inline-block
+        padding: 20px 30px
+        position: relative
+        margin-left: -40px
+
+  #footer
+    +container-alt
+    padding-top:  10px
+    padding-left: 40px
+        
+  /* FORMS ------------------------------*/
+  .inquiries 
+    form
+      +form-basic
+        

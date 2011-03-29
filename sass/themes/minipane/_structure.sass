@@ -1,0 +1,50 @@
+=minipane-structure
+
+  $blueprint-grid-columns   : 24
+  $blueprint-container-size : 950px
+  $blueprint-grid-margin    : 10px
+  
+  // Use this to calculate the width based on the total width.
+  // Or you can set $blueprint-grid-width to a fixed value and unset $blueprint-container-size -- it will be calculated for you.
+  $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin
+  
+  #body_content_title
+    +visually-hide
+
+  .inner
+    +box  
+
+  #page_container
+    +container-alt
+  
+  #header
+    padding-top: 20px
+    margin-bottom: 5px
+
+  #footer
+    margin-top: 10px
+    padding-left: 20px
+
+  #body_content
+    +clearfix
+    position: relative
+
+  #body_content_left
+    +column(16)
+    .no_body_content_right &
+      +column(22)
+  @import compass/layout/stretching
+  #body_content_right
+    +column(8)
+    +last
+    +stretch-y
+    right: 0
+    
+  #menu 
+    +menu-inline-blocks(4)
+  
+  /* FORMS ------------------------------*/
+  
+  .inquiries 
+    form
+      +form-basic

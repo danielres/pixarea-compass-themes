@@ -1,0 +1,32 @@
+// @import /stylesheets/refinery/application.css
+
+@import compass
+@import blueprint
+@import blueprint/reset/utilities
+
+@import compass/css3/pie
+$pie-behavior: stylesheet-url("../theme/stylesheets/PIE.htc") 
+
+@import lib
+@import modules
+
+@import themes/minipane/formatting
+@import themes/minipane/structure
+@import themes/minipane/tones
+@import themes/minipane/shapes
+@import themes/minipane/shadows
+
+=theme-minipane($tones: burma)
+  /* RESET ---------------------------------------------------------------------*/
+  +blueprint-global-reset
+  /* STRUCTURE -----------------------------------------------------------------*/
+  +minipane-structure
+  /* FORMATTING-----------------------------------------------------------------*/
+  +minipane-formatting
+  /* TONES ---------------------------------------------------------------------*/
+  +minipane-tones($tones)
+  /* SHAPES --------------------------------------------------------------------*/
+  +minipane-shapes
+  /* SHADOWS -------------------------------------------------------------------*/
+  +minipane-shadows
+

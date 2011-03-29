@@ -1,0 +1,73 @@
+=minipane-tones-dark
+  
+  // PALETTE
+  
+  $neutral:     (blue/9) + (gray) + 70     
+  $dark:        $neutral / 8
+  $light:       $neutral * 1.5
+  $lighter:     $neutral * 2
+  
+  $bg:   $dark
+  $text: $neutral
+  
+  // ASSIGNEMENTS
+
+  body
+    background: $bg
+    color:      $text
+
+  a
+    +link-colors($lighter, $lighter + 30, $lighter, $lighter, $lighter)
+    +hover-link
+    
+  #header 
+    h1
+      color: $neutral
+
+  #menu li
+    a
+      +link-colors(inherit, inherit)
+      text-decoration: none
+      background: $bg + 20
+    &.selected a,
+    a:hover
+      background: $bg + 30
+      color: $light
+        
+  #footer
+    color: ($bg / 2) + ($neutral / 2.5)
+    
+  #body_content_left
+    background: $dark + 30
+  
+  #body_content_right 
+    background: $dark + 10
+    color: $neutral - 50
+    //border: 2px solid $dark - 10
+    
+  #{headers()}
+    color: $light - 40
+
+
+  //FORMS
+  
+  input[type=text], 
+  input[type=submit], 
+  textarea
+    background: $dark + 20
+    &:focus
+      background: $dark + 60
+      border: none
+      outline: none
+
+  input[type=submit]
+    color: $neutral
+    font-weight: bold
+    cursor: pointer
+    &:hover
+      background: $dark + 60
+      color: $lighter
+
+
+
+

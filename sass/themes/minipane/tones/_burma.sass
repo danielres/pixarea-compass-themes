@@ -1,0 +1,26 @@
+=minipane-tones-burma
+
+  $darkblue: $burma-darkblue
+  $clearblue: $burma-clearblue
+  $sable: $burma-sable      
+  $palegreen: $burma-palegreen 
+  $deepgreen: $burma-deepgreen
+  $lightsable: $burma-lightsable
+  
+  html, body  
+    height: 100%
+  body
+    +linear-gradient-pie(#333 0%, #999 100%)             
+  #header
+    h1
+      background: $darkblue
+  #body_content_left
+    background: $lightsable
+  #menu li
+    background: $lightsable
+    +linear-gradient-pie($palegreen 0%, $deepgreen 100%)
+  #body_content_right .inner
+    $framb: #A83438
+    background: $framb
+    border: 1px solid $framb - #222222
+
