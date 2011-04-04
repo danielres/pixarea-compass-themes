@@ -35,23 +35,25 @@
 // $blueprint_table_header_color: #c3d9ff !default
 // $blueprint_table_stripe_color: #e5ecf9 !default
 
-@import lib
+@import pixarea/lib
 
-//@import themes/minipane/tones/circus
-@import themes/minipane/tones/burma
-@import themes/minipane/tones/dark
-//@import themes/minipane/tones/firen
-//@import themes/minipane/tones/rusty
+@import pixarea/themes/shapy/tones/circus
+@import pixarea/themes/shapy/tones/burma
+@import pixarea/themes/shapy/tones/dark
+@import pixarea/themes/shapy/tones/firen
+@import pixarea/themes/shapy/tones/rusty
 
-=minipane-tones($tones: burma)
+=shapy-tones($tones: dark)
   @if $tones == circus
-    +minipane-tones-circus
+    +shapy-tones-circus
   @if $tones == burma
-    +minipane-tones-burma
+    +shapy-tones-burma
   @if $tones == dark
-    +minipane-tones-dark
+    +shapy-tones-dark
   @if $tones == firen
-    +minipane-tones-firen
+    +shapy-tones-firen
   @if $tones == rusty
-    +minipane-tones-rusty
+    +shapy-tones-rusty
 
+  #menu a
+    +unstyled-link
