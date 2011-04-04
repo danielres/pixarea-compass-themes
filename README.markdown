@@ -17,7 +17,24 @@ Remember that everything here can be modified, broken, refactored at any time.
 
 But if you like the approach, feel free to clone, play with it and share ideas.
 
+Install as a gem
+----------------
 
+    gem install pixarea-compass-themes
 
+Generate a theme
+----------------
+This project is a Compass plugin.
+So you have to install Compass first, then you can create your new project with:
 
+    compass create MY_THEME -r pixarea-compass-themes -u pixarea-compass-themes --syntax sass
 
+Where MY_THEME is the name of your project.
+
+Note: Don't use "--syntax sass" if you prefer the scss syntax.
+
+To remove Compass line comments
+-------------------------------
+Add this to the file config.rb:
+
+    line_comments = false
