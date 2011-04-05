@@ -11,16 +11,16 @@
     height: 100%
   body
     +linear-gradient-pie(#333 0%, #999 100%)             
-  #header
+  #{$_header}
     h1
       background: $darkblue
       a
         +linear-gradient-pie($palegreen 0%, $deepgreen 100%)
-  #body_content_left
+  #{$_body}_content_left
     background: $lightsable
-  #menu a
+  #{$_menu_1} a
     background: $lightsable - 30
-  #body_content_right .inner
+  #{$_body}_content_right #{$_inner}
     $framb:     #A83438
     $bg-sub:    $framb 
     background: $bg-sub

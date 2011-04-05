@@ -9,10 +9,10 @@
 =shapy-shapes-
   $default-border-radius: 10px
   +shapy-shapes-form
-  #header h1,
-  #header h1 a,
-  #menu a,
-  #body_content_left
+  #{$_header} h1,
+  #{$_header} h1 a,
+  #{$_menu_1} a,
+  #{$_body}_content_left
     +pie
     +border-radius
 
@@ -24,9 +24,9 @@
     +border-radius-pie(50px $b)
     a
       +border-radius-pie(50px $b)
-  #body_content_right .inner
+  #{$_body}_content_right #{$_inner}
     +border-radius-pie($b $b*4 $b*4 $b)
-  #body_content_left
+  #{$_body}_content_left
     +border-radius-pie($b)      
-  #menu a
+  #{$_menu_1} a
     +border-radius-pie($b $b 0 0)

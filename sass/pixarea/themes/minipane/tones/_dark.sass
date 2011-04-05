@@ -20,11 +20,11 @@
     +link-colors($lighter, $lighter + 30, $lighter, $lighter, $lighter)
     +hover-link
     
-  #header 
+  #{$_header} 
     h1
       color: $neutral
 
-  #menu li
+  #{$_menu_1} li
     a
       +link-colors(inherit, inherit)
       text-decoration: none
@@ -34,13 +34,13 @@
       background: $bg + 30
       color: $light
         
-  #footer
+  #{$_footer}
     color: ($bg / 2) + ($neutral / 2.5)
     
-  #body_content_left
+  #{$_body}_content_left
     background: $dark + 30
   
-  #body_content_right 
+  #{$_body}_content_right 
     background: $dark + 10
     color: $neutral - 50
     //border: 2px solid $dark - 10

@@ -14,17 +14,17 @@
     height: 100%
   body     
     +linear-gradient-pie($brown, $brownish-orange)
-  #header
+  #{$_header}
     h1
       +linear-gradient-pie(saturate(lighten($young-green, 20),100) 0%,saturate(darken($green,10),30) 100%)
       a
         +linear-gradient(color-stops(lighten($orange, 30), lighten($orange, 20), $orange, $red))
         color: darken($brownish-orange, 5)
-  #body_content_left
+  #{$_body}_content_left
     +linear-gradient-pie($mix1 0%, white 100%)
-  #menu li
+  #{$_menu_1} li
     +linear-gradient-pie($mix1 0%, darken($mix1,20) 100%)
     &:hover
       +linear-gradient-pie($mix1 0%, $mix1 100%)
-  #body_content_right .box
+  #{$_body}_content_right .box
     background: mix($young-green, $brownish-orange, 30)

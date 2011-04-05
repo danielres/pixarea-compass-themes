@@ -11,15 +11,15 @@
     height: 100%
   body
     +linear-gradient-pie(#333 0%, #999 100%)             
-  #header
+  #{$_header}
     h1
       background: $darkblue
-  #body_content_left
+  #{$_body}_content_left
     background: $lightsable
-  #menu li
+  #{$_menu_1} li
     background: $lightsable
     +linear-gradient-pie($palegreen 0%, $deepgreen 100%)
-  #body_content_right .inner
+  #{$_body}_content_right #{$_inner}
     $framb: #A83438
     background: $framb
     border: 1px solid $framb - #222222

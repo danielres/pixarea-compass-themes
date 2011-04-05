@@ -20,7 +20,7 @@
     +link-colors($lighter, $lighter + 30, $lighter, $lighter, $lighter)
     +hover-link
 
-  #header 
+  #{$_header} 
     h1
       color: $neutral
       +linear-gradient-pie($bg + 25, $bg + 10)
@@ -33,13 +33,13 @@
         +linear-gradient-pie($bg + 65, $bg + 40)
         color: $light
         
-  #footer
+  #{$_footer}
     color: ($bg / 2) + ($neutral / 2.5)
     
-  #body_content_left
+  #{$_body}_content_left
     background: $dark + 30
   
-  #body_content_right 
+  #{$_body}_content_right 
     background: $dark + 20
     border: 2px solid $dark - 10
     
