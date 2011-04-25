@@ -33,7 +33,15 @@
     a:hover
       background: $bg + 30
       color: $light
-        
+
+  #{$_menu_lang} li
+    a
+      text-decoration: none
+    &.selected a,
+    a:hover
+      background: $bg + 30
+      color: $light
+
   #{$_footer}
     color: ($bg / 2) + ($neutral / 2.5)
     
