@@ -43,6 +43,7 @@
 @import pixarea/themes/cabinet/tones/firen
 @import pixarea/themes/cabinet/tones/rusty
 @import pixarea/themes/cabinet/tones/graysand
+@import pixarea/themes/cabinet/tones/bluepaper
 
 =cabinet-tones($tones: dark)
   @if $tones == circus
@@ -57,6 +58,8 @@
     +cabinet-tones-rusty
   @if $tones == graysand
     +cabinet-tones-graysand
+  @if $tones == bluepaper
+    +cabinet-tones-bluepaper    
 
   #{$_menu_1} a
     +unstyled-link
