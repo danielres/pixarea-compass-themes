@@ -1,6 +1,6 @@
-=box($padding: 20px, $margin-bottom: 20px)
+=box($padding: 20px)
   padding: $padding
-  margin-bottom: $margin-bottom
+  // margin-bottom: $margin-bottom
 
 =container-alt
   +container
@@ -10,3 +10,11 @@
 =visually-hide
   visibility: hidden
   position: absolute  
+  
+=liquid-column($last: false)
+  overflow: hidden
+  +append-bottom($blueprint-grid-margin)
+  @if $last
+    +last
+  @else
+    margin-right: $blueprint-grid-margin  
