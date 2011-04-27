@@ -16,12 +16,13 @@
       
     <div id="page_container">
       <header>      
-        <%= yield :header_before %>
+        <%= yield :header_prepend %>
         <%= render :partial => "/shared/header" -%>
         <%= render :partial => "/shared/menu", :locals => { :dom_id => 'menu', :css => 'menu' } -%>
       </header>
       
       <section id='page'>
+      
         <%= yield %>
       </section>
       <footer>
