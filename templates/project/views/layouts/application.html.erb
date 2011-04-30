@@ -8,4 +8,4 @@
   pixarea_theme_variant = pixarea_theme.value.split("-")[1]
   locals = { :pixarea_theme => pixarea_theme_name, :pixarea_theme_variant => pixarea_theme_variant }
 -%>
-<%= render(:partial => '/layouts/' + pixarea_theme, :locals => locals ) rescue render(:partial => '/layouts/default', :locals => locals) -%>
+<%= render(:partial => '/layouts/' + pixarea_theme_name, :locals => locals ) rescue render(:partial => '/layouts/default', :locals => locals) -%>
